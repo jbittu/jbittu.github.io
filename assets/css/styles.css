@@ -1,0 +1,117 @@
+*{
+    margin: 0px;
+}
+.container{
+        background-color: white;
+        /* margin: 0px; */
+}
+.row{
+    background-color: pink;
+    color: green;
+    display: flex;
+    justify-content: space-between;
+    position: sticky;
+    top: 0px;
+}
+.row1{
+    background-color: azure;
+    height: 300px;
+    color: navy;
+    display: flex;
+    justify-content: space-around;
+    padding: 28px;
+    height: 600px;
+    align-items: center;
+    
+}
+.row2{
+    background-color: silver;
+    color: blue;
+    display: flex;
+    justify-content: space-around;
+    padding: 28px;
+    height: 600px;
+    align-items: center;
+    
+}
+.row3{
+    background-color: black;
+}
+.row4{
+    background-color: lightblue;
+    color: blue;
+    display: flex;
+    justify-content: space-around;
+    padding: 0px;
+    height: 600px;
+    align-items: center;
+    
+}
+.row5{
+    background-color: lightgreen;
+    color: blue;
+    display: flex;
+    justify-content: space-around;
+    padding: 0px;
+    height: 600px;
+    align-items: center;
+    
+}
+.row6{
+    background-color: lightseagreen;
+    color: blue;
+    display: flex;
+    justify-content: space-around; 
+    padding: 0px;
+    height: 600px;
+    align-items: center; 
+    
+}
+.footer{
+    background-color: black;
+    color: brown;
+    display: flex;
+    justify-content: space-around;
+
+}
+.box{
+    /* background-color: yellow; */
+    padding: 10px;
+}
+.box1{
+    background-color: white;
+    color: black;
+    margin: 10px;
+    padding: 20px;
+    border-radius: 20px;
+    justify-content: space-around;
+    flex-wrap: wrap;
+
+}
+li{
+    display: inline;
+    padding: 5px;
+    font-size: large;
+}
+a {
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline ;
+    font-style: italic;
+    color: brown;
+    font-weight: bold;
+    
+}
+.imgclass{
+    border-radius: 40px;
+
+}
+.service{
+    text-align: center;
+    align-items: center;
+    background-color: lightgreen;
+    justify-content: space-around;
+    display: flex;
+    flex-wrap: wrap;
+}
