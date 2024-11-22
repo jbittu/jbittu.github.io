@@ -69,10 +69,10 @@
         background-color: lightseagreen;
         color: blue;
         display: flex;
-        justify-content: space-around;
+        justify-content: space-around; 
         padding: 0px;
         height: 600px;
-        align-items: center;
+        align-items: center; 
         
     }
     .footer{
@@ -92,6 +92,9 @@
         margin: 10px;
         padding: 20px;
         border-radius: 20px;
+        justify-content: space-around;
+        flex-wrap: wrap;
+
     }
     li{
         display: inline;
@@ -111,6 +114,14 @@
     .imgclass{
         border-radius: 40px;
 
+    }
+    .service{
+        text-align: center;
+        align-items: center;
+        background-color: lightgreen;
+        justify-content: space-around;
+        display: flex;
+        flex-wrap: wrap;
     }
 </style>
 <body>
@@ -156,9 +167,10 @@
                 <h3><i> hi i am bittu jaiswal</i></h3>
             </div>
         </div>
-        <div>
-            <h1>Services</h1>
-            <div class="row5" id = "Services">
+        <div  id = "Services">
+            <h1 class="service" >Services</h1>
+            <div class="row5">
+                
                 <div class="box1"> 
                     <h3>Frontend developer</h3>
                     <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nobis dolorem nesciunt debitis deserunt, delectus explicabo soluta sunt neque voluptatibus est, enim nemo eum dicta aliquid officiis earum reiciendis dolores eius.</p> 
