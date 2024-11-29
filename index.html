@@ -3,77 +3,101 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>jbittu</title>
+    <title>Bittu Jaiswal Portfolio</title>
     <link rel="icon" type="image/x-icon" href="/assets/image/logo-design_6415824.png">
     <link rel="stylesheet" href="/assets/css/styles.css">
-
 </head>
-
 <body>
-    <div class="container">
-        <div class="row">
-            <div class="box"><h1>Bittu Jaiswal</h1></div>
-            <div class="box">
-                <ol>
-                    <li><a href="#Home">Home</a></li>
-                    <li><a href="#Project">Project</a></li>
-                    <li><a href="#About">About</a></li>
-                    <li><a href="#Services">Services</a></li>
-                    <li><a href="#Contact">Contact</a></li>
-                </ol>
-            </div>
-        </div>
-        <div class="row1" id = "Home">
-            <div>
-                <h1><u>Bittu Jaiswal</u></h1>
-                <h3><i>I am fullstack developer</i></h3>
-            </div>  
-                <img class="imgclass" src="https://github.com/jbittu/jbittu.github.io/blob/main/aa.jpg?raw=true" style="width:300px; height: 300px;" alt="Luffy">
-        </div>
-        <div class="row2" id = "Project">
-            <div>
-                <h1>Project</h1>
-                <ol>
-                    <li><a href="#"><h4>Project 1</h4></a></li>
-                    <li><a href="#"><h4>Project 2</h4></a></li>
-                </ol>
-            </div>        
-        </div>
-        <div class="row4" id = "About">
-            <div>
-                <h1>About</h1>
-                <h3><i> hi i am bittu jaiswal</i></h3>
-            </div>
-        </div>
-        <div class="row5"  id = "Services">
-            <!-- <h1 class="service">Services</h1> -->
-                <div class="box1"> 
-                    <h3>Frontend developer</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nobis dolorem nesciunt debitis deserunt, delectus explicabo soluta sunt neque voluptatibus est, enim nemo eum dicta aliquid officiis earum reiciendis dolores eius.</p> 
-                </div>
-                <div class="box1">
-                    <h3>Backend developer</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, atque. Sint provident beatae culpa temporibus nemo quia saepe eveniet qui eos autem aliquid modi rerum et explicabo, sequi quidem eius!</p>
-                </div>
-                <div class="box1">
-                    <h3>Web developer</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto vel aperiam suscipit vero assumenda, ducimus dolores voluptates corporis, sint, beatae ratione eos distinctio unde velit est? Quas minus quae placeat!</p>
-                </div>
-        </div>
-        <div class="row6" id = "Contact">
-            <div>
-                <h1>Contact</h1>
-                <ol>
-                    <li>Name</li>
-                    <li>email</li>
-                    <li>Phone no</li>
-                </ol>
-            </div>
-        </div>
-        <div class="footer">
-            <h3>@all done</h3>
-        </div> 
-    </div>
     
+    <header class="navbar">
+        <h1 class="logo">Bittu Jaiswal</h1>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="#Home">Home</a></li>
+                <li><a href="#Project">Projects</a></li>
+                <li><a href="#About">About</a></li>
+                <li><a href="#Services">Services</a></li>
+                <li><a href="#Contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    
+    <main>
+        
+        <section class="section" id="Home">
+            <div class="content">
+                <h1>Bittu Jaiswal</h1>
+                <p>I am a <span class="highlight">Full-Stack Developer</span> passionate about building innovative digital solutions.</p>
+                
+                <button class="cta-btn">Explore My Work</button>
+                <img class="hero-img" src="https://github.com/jbittu/jbittu.github.io/blob/main/aa.jpg?raw=true" alt="Bittu Jaiswal">
+            </div>
+        </section>
+
+        
+        <section class="section" id="Project">
+            <div class="content">
+                <h2>Projects</h2>
+                <div class="project-cards">
+                    <div class="project-card">
+                        <h3>Project 1</h3>
+                        <p>A dynamic e-commerce platform built with React and Node.js.</p>
+                        <a href="#" class="view-btn">View Details</a>
+                    </div>
+                    <div class="project-card">
+                        <h3>Project 2</h3>
+                        <p>An AI-powered chatbot for customer support services.</p>
+                        <a href="#" class="view-btn">View Details</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        
+        <section class="section" id="About">
+            <div class="content">
+                <h2>About Me</h2>
+                <p>Hi, I'm Bittu Jaiswal, a full-stack developer with expertise in creating seamless web applications. I specialize in modern technologies like React, Node.js, and MongoDB, striving to deliver exceptional user experiences.</p>
+            </div>
+        </section>
+
+        
+        <section class="section" id="Services">
+            <div class="content">
+                <h2>Services</h2>
+                <div class="service-cards">
+                    <div class="service-card">
+                        <h3>Frontend Development</h3>
+                        <p>Crafting responsive and visually appealing user interfaces with modern frameworks.</p>
+                    </div>
+                    <div class="service-card">
+                        <h3>Backend Development</h3>
+                        <p>Building robust APIs and server-side logic using Node.js and Express.</p>
+                    </div>
+                    <div class="service-card">
+                        <h3>Web Design</h3>
+                        <p>Designing intuitive layouts and experiences for your users.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        
+        <section class="section" id="Contact">
+            <div class="content">
+                <h2>Contact Me</h2>
+                <ul>
+                    <li>Name: Bittu Jaiswal</li>
+                    <li>Email: bittu@example.com</li>
+                    <li>Phone: +91-9876543210</li>
+                </ul>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2024 Bittu Jaiswal. All rights reserved.</p>
+    </footer>
 </body>
 </html>
