@@ -1,194 +1,386 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>BITTU JAISWAL</title>
-  <link rel="icon" type="image/x-icon" href="assets/image/logo.jpg">
-  <script src="https://cdn.tailwindcss.com"></script>
-  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-  <script>
-    function toggleMenu() {
-      document.getElementById("mobile-menu").classList.toggle("hidden");
-    }
-
-    document.addEventListener('DOMContentLoaded', function () {
-      let textElement = document.getElementById('typewriter');
-      let text = "Hello, I'm Bittu Jaiswal | Software Developer | AI/ML Enthusiast";
-      let i = 0;
-      function typeWriter() {
-        if (i < text.length) {
-          textElement.innerHTML += text.charAt(i);
-          i++;
-          setTimeout(typeWriter, 100);
-        }
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BITTU JAISWAL</title>
+    <link rel="icon" type="image/x-icon" href="assets/image/logo.jpg" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <script>
+      function toggleMenu() {
+        document.getElementById("mobile-menu").classList.toggle("hidden");
       }
-      typeWriter();
-      AOS.init();
-    });
-  </script>
-</head>
-<body class="bg-gray-900 text-gray-200">
 
-<!-- Header -->
-<header class="bg-gray-800 shadow-md fixed w-full top-0 left-0 z-50" data-aos="fade-down">
-  <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
-    <div class="flex items-center space-x-3">
-      <img src="assets/image/bittu_logo.jpg" alt="Logo" class="h-12 w-12 sm:h-16 sm:w-16 object-cover">
-      <span class="text-2xl font-bold text-indigo-400">Bittu Jaiswal</span>
-    </div>
-    <nav class="hidden md:flex space-x-8 text-gray-300 font-medium">
-      <a href="#home" class="hover:text-indigo-400">Home</a>
-      <a href="#about" class="hover:text-indigo-400">About</a>
-      <a href="#projects" class="hover:text-indigo-400">Projects</a>
-      <a href="#contact" class="hover:text-indigo-400">Contact</a>
-    </nav>
-    <button class="md:hidden text-indigo-400" onclick="toggleMenu()">
-      <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
-      </svg>
-    </button>
-  </div>
-  <nav id="mobile-menu" class="hidden md:hidden bg-gray-800 text-gray-300 space-y-4 p-4">
-    <a href="#home" class="block hover:text-indigo-400">Home</a>
-    <a href="#about" class="block hover:text-indigo-400">About</a>
-    <a href="#projects" class="block hover:text-indigo-400">Projects</a>
-    <a href="#contact" class="block hover:text-indigo-400">Contact</a>
-  </nav>
-</header>
-
-<!-- Hero -->
-
-<section id="home" class="h-screen flex flex-col justify-center items-center text-center bg-gray-900 bg-cover bg-center relative" style="background-image: url('assets/image/cover.jpg');" data-aos="fade-up">
-    <div class="absolute inset-0 bg-gray-900 bg-opacity-70"></div> 
-    <div class="relative p-8 z-10">
-      <h1 class="text-4xl md:text-6xl font-extrabold mb-6">
-        <span id="typewriter" class="text-indigo-400"></span>
-      </h1>
-      <p class="text-lg md:text-2xl mb-8">I am a dedicated Software Developer with a passion for creating scalable, efficient, and user-friendly web applications. As an AI/ML enthusiast, I actively explore cutting-edge technologies and dive deep into machine learning projects to push the boundaries of innovation and solve real-world problems.</p>
-      <div class="space-x-4">
-        <a href="#projects" class="inline-block bg-indigo-600 hover:bg-indigo-700 px-6 py-3 rounded-lg text-white font-semibold transition">View My Work</a>
-        <a href="assets/Bittu_Jaiswal_resume.pdf" download class="inline-block bg-gray-700 hover:bg-gray-800 px-6 py-3 rounded-lg text-white font-semibold transition">Download Resume</a>
-      </div>
-    </div>
-  </section>
-  
-
-<!-- About Me -->
-<section id="about" class="py-20 px-6 bg-gray-800" data-aos="fade-up">
-  <div class="max-w-5xl mx-auto text-center">
-    <h2 class="text-3xl font-bold mb-10 text-indigo-400">About Me</h2>
-    <div class="flex justify-center mb-8">
-      <img src="assets/image/aa.jpg" alt="Profile" class="border-4 border-indigo-500 shadow-lg w-40 h-40 object-cover">
-    </div>
-    <p class="text-gray-400 leading-relaxed mb-10">I am eager to work in dynamic and challenging environments that allow me to continually enhance my skills, innovate new ideas, and effectively apply my knowledge. With a strong foundation in problem-solving, coupled with a solid understanding of data structures and algorithms, I am committed to tackling complex challenges and delivering efficient, impactful solutions.</p>
-    <div class="grid grid-cols-1 md:grid-cols-2 gap-12 text-left">
-      <div>
-        <h3 class="text-2xl font-semibold mb-4">Programming Languages</h3>
-        <ul class="list-disc list-inside space-y-2">
-          <li>Java</li>
-          <li>Python</li>
-          <li>HTML, CSS, JavaScript</li>
-          <li>MongoDB, SQL</li>
-        </ul>
-      </div>
-      <div>
-        <h3 class="text-2xl font-semibold mb-4">Skills</h3>
-        <ul class="list-disc list-inside space-y-2">
-          <li>Data Structures and Algorithms</li>
-          <li>Machine Learning, NLP</li>
-          <li>Operating Systems</li>
-          <li>Keras, TensorFlow</li>
-        </ul>
-      </div>
-      <div>
-        <h3 class="text-2xl font-semibold mb-4">Tools</h3>
-        <ul class="list-disc list-inside space-y-2">
-          <li>VS Code, Eclipse</li>
-          <li>Google Colab, Postman</li>
-          <li>Matlab</li>
-        </ul>
-      </div>
-      <div>
-        <h3 class="text-2xl font-semibold mb-4">Frameworks & Libraries</h3>
-        <ul class="list-disc list-inside space-y-2">
-          <li>ReactJS, NextJS, ExpressJS, NodeJS</li>
-          <li>Pandas, NumPy, PyTorch, TensorFlow</li>
-        </ul>
-      </div>
-    </div>
-    <div class="mt-16">
-      <h3 class="text-2xl font-semibold mb-6">Education</h3>
-      <ul class="list-disc list-inside space-y-4">
-        <li><strong>Mahindra University, Hyderabad</strong> — M.Tech in AI & Data Science (Ongoing) | CGPA: 7.6</li>
-        <li><strong>National Institute of Technology (NIT) Sikkim</strong> — B.Tech in Electrical and Electronics Engineering | CGPA: 7.26</li>
-      </ul>
-    </div>
-  </div>
-</section>
-
-<!-- Projects -->
-<section id="projects" class="py-20 px-6 bg-gray-900" data-aos="fade-up">
-  <div class="max-w-7xl mx-auto text-center">
-    <h2 class="text-3xl font-bold mb-12 text-indigo-400">Projects</h2>
-    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">
-
-        <!-- Project Cards -->
-        <div class="bg-gray-800 rounded-xl shadow-md overflow-hidden transform hover:scale-105 transition duration-300 p-6">
-          <img src="assets/icons/face-icon.png" alt="Emotion Detection" class="mx-auto mb-4 w-16 h-16">
-          <h3 class="text-xl font-bold mb-2">Emotion Detection Using CNN</h3>
-          <p class="text-gray-400 mb-4">Built CNN models with FER-2013 dataset to detect emotions, achieving 66% accuracy.</p>
-          <a href="https://github.com/jbittu/emotion_detection" target="_blank" class="text-indigo-400 hover:underline">View Code</a>
+      document.addEventListener("DOMContentLoaded", function () {
+        let textElement = document.getElementById("typewriter");
+        let text =
+          "Hello, I'm Bittu Jaiswal | Software Developer | AI/ML Enthusiast";
+        let i = 0;
+        function typeWriter() {
+          if (i < text.length) {
+            textElement.innerHTML += text.charAt(i);
+            i++;
+            setTimeout(typeWriter, 100);
+          }
+        }
+        typeWriter();
+        AOS.init();
+      });
+    </script>
+  </head>
+  <body class="bg-gray-900 text-gray-200">
+    <!-- Header -->
+    <header
+      class="bg-gray-800 shadow-md fixed w-full top-0 left-0 z-50"
+      data-aos="fade-down"
+    >
+      <div
+        class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center"
+      >
+        <div class="flex items-center space-x-3">
+          <img
+            src="assets/image/bittu_logo.jpg"
+            alt="Logo"
+            class="h-12 w-12 sm:h-16 sm:w-16 object-cover"
+          />
+          <span class="text-2xl font-bold text-indigo-400">Bittu Jaiswal</span>
         </div>
-  
-        <div class="bg-gray-800 rounded-xl shadow-md overflow-hidden transform hover:scale-105 transition duration-300 p-6">
-          <img src="assets/icons/delivery-icon.png" alt="Swiggy Delivery Prediction" class="mx-auto mb-4 w-16 h-16">
-          <h3 class="text-xl font-bold mb-2">Swiggy Delivery Time Prediction</h3>
-          <p class="text-gray-400 mb-4">Predicted delivery times using ML models, deployed via Docker on AWS cloud.</p>
-          <a href="https://github.com/jbittu/swiggy-delivery-time-prediction" target="_blank" class="text-indigo-400 hover:underline">View Code</a>
-        </div>
-  
-        <div class="bg-gray-800 rounded-xl shadow-md overflow-hidden transform hover:scale-105 transition duration-300 p-6">
-          <img src="assets/icons/cluster-icon.png" alt="K-Means Clustering" class="mx-auto mb-4 w-16 h-16">
-          <h3 class="text-xl font-bold mb-2">Parallel K-Means Clustering</h3>
-          <p class="text-gray-400 mb-4">Optimized K-Means clustering with OpenMP achieving 18.35x speedup.</p>
-          <a href="https://github.com/jbittu/k_means_clustering" target="_blank" class="text-indigo-400 hover:underline">View Code</a>
-        </div>
-  
-        <div class="bg-gray-800 rounded-xl shadow-md overflow-hidden transform hover:scale-105 transition duration-300 p-6">
-          <img src="assets/icons/fitness-icon.png" alt="Workout Buddy App" class="mx-auto mb-4 w-16 h-16">
-          <h3 class="text-xl font-bold mb-2">Workout Buddy App</h3>
-          <p class="text-gray-400 mb-4">Full-stack web app for tracking workouts built with React, Express.js, MongoDB.</p>
-          <a href="github.com/jbittu/crud_appWith_db" target="_blank" class="text-indigo-400 hover:underline">View Code</a>
-        </div>
-  
+        <nav class="hidden md:flex space-x-8 text-gray-300 font-medium">
+          <a href="#home" class="hover:text-indigo-400">Home</a>
+          <a href="#about" class="hover:text-indigo-400">About</a>
+          <a href="#projects" class="hover:text-indigo-400">Projects</a>
+          <a href="#contact" class="hover:text-indigo-400">Contact</a>
+        </nav>
+        <button class="md:hidden text-indigo-400" onclick="toggleMenu()">
+          <svg
+            class="w-6 h-6"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M4 6h16M4 12h16M4 18h16"
+            />
+          </svg>
+        </button>
       </div>
-    
-  </div>
-</section>
+      <nav
+        id="mobile-menu"
+        class="hidden md:hidden bg-gray-800 text-gray-300 space-y-4 p-4"
+      >
+        <a href="#home" class="block hover:text-indigo-400">Home</a>
+        <a href="#about" class="block hover:text-indigo-400">About</a>
+        <a href="#projects" class="block hover:text-indigo-400">Projects</a>
+        <a href="#contact" class="block hover:text-indigo-400">Contact</a>
+      </nav>
+    </header>
 
-<!-- Contact -->
-<section id="contact" class="py-20 px-6 bg-gray-800" data-aos="fade-up">
-  <div class="max-w-screen-md mx-auto text-center">
-    <h2 class="text-3xl font-bold mb-8 text-indigo-400">Contact Me</h2>
-    <form class="space-y-6">
-      <input type="text" placeholder="Your Name" class="w-full p-4 rounded-lg bg-gray-700 text-gray-200 focus:ring-2 focus:ring-indigo-500">
-      <input type="email" placeholder="Your Email" class="w-full p-4 rounded-lg bg-gray-700 text-gray-200 focus:ring-2 focus:ring-indigo-500">
-      <textarea placeholder="Your Message" class="w-full p-4 rounded-lg bg-gray-700 text-gray-200 focus:ring-2 focus:ring-indigo-500"></textarea>
-      <button type="submit" class="w-full py-4 bg-indigo-600 hover:bg-indigo-700 text-white font-semibold rounded-lg transition">Send Message</button>
-    </form>
-  </div>
-</section>
+    <!-- Hero -->
 
-<!-- Footer -->
-<footer class="bg-gray-900 text-gray-400 text-center py-6">
-  <div class="flex justify-center space-x-6">
-    <a href="https://github.com/jbittu" target="_blank" class="hover:text-white">GitHub</a>
-    <a href="https://www.linkedin.com/in/bittu-jaiswal/" target="_blank" class="hover:text-white">LinkedIn</a>
-  </div>
-  <p class="mt-4">&copy; 2025 Bittu Jaiswal. All Rights Reserved.</p>
-</footer>
+    <section
+      id="home"
+      class="h-screen flex flex-col justify-center items-center text-center bg-gray-900 bg-cover bg-center relative"
+      style="background-image: url('assets/image/cover.jpg')"
+      data-aos="fade-up"
+    >
+      <div class="absolute inset-0 bg-gray-900 bg-opacity-70"></div>
+      <div class="relative p-8 z-10">
+        <h1 class="text-4xl md:text-6xl font-extrabold mb-6">
+          <span id="typewriter" class="text-indigo-400"></span>
+        </h1>
+        <p class="text-lg md:text-2xl mb-8">
+          I am a dedicated Software Developer with a passion for creating
+          scalable, efficient, and user-friendly web applications. As an AI/ML
+          enthusiast, I actively explore cutting-edge technologies and dive deep
+          into machine learning projects to push the boundaries of innovation
+          and solve real-world problems.
+        </p>
+        <div class="space-x-4">
+          <a
+            href="#projects"
+            class="inline-block bg-indigo-600 hover:bg-indigo-700 px-6 py-3 rounded-lg text-white font-semibold transition"
+            >View My Work</a
+          >
+          <a
+            href="assets/image/Bittu_Jaiswal_resume.pdf"
+            download
+            class="inline-block bg-gray-700 hover:bg-gray-800 px-6 py-3 rounded-lg text-white font-semibold transition"
+            >Download Resume</a
+          >
+        </div>
+      </div>
+    </section>
 
-<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-</body>
+    <!-- About Me -->
+    <section id="about" class="py-20 px-6 bg-gray-800" data-aos="fade-up">
+      <div class="max-w-5xl mx-auto text-center">
+        <h2 class="text-3xl font-bold mb-10 text-indigo-400">About Me</h2>
+        <div class="flex justify-center mb-8">
+          <img
+            src="assets/image/aa.jpg"
+            alt="Profile"
+            class="border-4 border-indigo-500 shadow-lg w-40 h-40 object-cover"
+          />
+        </div>
+        <p class="text-gray-400 leading-relaxed mb-10">
+          I am eager to work in dynamic and challenging environments that allow
+          me to continually enhance my skills, innovate new ideas, and
+          effectively apply my knowledge. With a strong foundation in
+          problem-solving, coupled with a solid understanding of data structures
+          and algorithms, I am committed to tackling complex challenges and
+          delivering efficient, impactful solutions.
+        </p>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-12 text-left">
+          <div>
+            <h3 class="text-2xl font-semibold mb-4">Programming Languages</h3>
+            <ul class="list-disc list-inside space-y-2">
+              <li>Java</li>
+              <li>Python</li>
+              <li>HTML, CSS, JavaScript</li>
+              <li>MongoDB, SQL</li>
+            </ul>
+          </div>
+          <div>
+            <h3 class="text-2xl font-semibold mb-4">Skills</h3>
+            <ul class="list-disc list-inside space-y-2">
+              <li>Data Structures and Algorithms</li>
+              <li>Machine Learning, NLP</li>
+              <li>Operating Systems</li>
+              <li>Keras, TensorFlow</li>
+            </ul>
+          </div>
+          <div>
+            <h3 class="text-2xl font-semibold mb-4">Tools</h3>
+            <ul class="list-disc list-inside space-y-2">
+              <li>VS Code, Eclipse, Intellij IDEA</li>
+              <li>Google Colab, Postman</li>
+              <li>Matlab</li>
+            </ul>
+          </div>
+          <div>
+            <h3 class="text-2xl font-semibold mb-4">Frameworks & Libraries</h3>
+            <ul class="list-disc list-inside space-y-2">
+              <li>ReactJS, NextJS, ExpressJS, NodeJS</li>
+              <li>Pandas, NumPy, PyTorch, TensorFlow</li>
+            </ul>
+          </div>
+        </div>
+        <div class="mt-16">
+          <h3 class="text-2xl font-semibold mb-6">Education</h3>
+          <ul class="list-disc list-inside space-y-4">
+            <li>
+              <strong>Mahindra University, Hyderabad</strong> — M.Tech in AI &
+              Data Science (Ongoing) | CGPA: 7.6
+            </li>
+            <li>
+              <strong>National Institute of Technology (NIT) Sikkim</strong> —
+              B.Tech in Electrical and Electronics Engineering | CGPA: 7.26
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects" class="py-20 px-6 bg-gray-900" data-aos="fade-up">
+      <div class="max-w-7xl mx-auto text-center">
+        <h2 class="text-3xl font-bold mb-12 text-indigo-400">Projects</h2>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">
+          <!-- Project Cards -->
+          <div
+            class="bg-gray-800 rounded-xl shadow-md overflow-hidden transform hover:scale-105 transition duration-300 p-6"
+          >
+            <img
+              src="assets/image/10817524.png"
+              alt="Emotion Detection"
+              class="mx-auto mb-4 w-16 h-16"
+            />
+            <h3 class="text-xl font-bold mb-2">Emotion Detection Using CNN</h3>
+            <p class="text-gray-400 mb-4">
+              Built CNN models with FER-2013 dataset to detect emotions,
+              achieving 66% accuracy.
+            </p>
+            <a
+              href="https://github.com/jbittu/emotion_detection"
+              target="_blank"
+              class="text-indigo-400 hover:underline"
+              >View Code</a
+            >
+          </div>
+
+          <div
+            class="bg-gray-800 rounded-xl shadow-md overflow-hidden transform hover:scale-105 transition duration-300 p-6"
+          >
+            <img
+              src="assets/image/swigi.png"
+              alt="Swiggy Delivery Prediction"
+              class="mx-auto mb-4 w-16 h-16"
+            />
+            <h3 class="text-xl font-bold mb-2">
+              Swiggy Delivery Time Prediction
+            </h3>
+            <p class="text-gray-400 mb-4">
+              Predicted delivery times using ML models, deployed via Docker on
+              AWS cloud.
+            </p>
+            <a
+              href="https://github.com/jbittu/swiggy-delivery-time-prediction"
+              target="_blank"
+              class="text-indigo-400 hover:underline"
+              >View Code</a
+            >
+          </div>
+
+          <div
+            class="bg-gray-800 rounded-xl shadow-md overflow-hidden transform hover:scale-105 transition duration-300 p-6"
+          >
+            <img
+              src="assets/image/k_means_clustering.jpg"
+              alt="K-Means Clustering"
+              class="mx-auto mb-4 w-16 h-16"
+            />
+            <h3 class="text-xl font-bold mb-2">Parallel K-Means Clustering</h3>
+            <p class="text-gray-400 mb-4">
+              Optimized K-Means clustering with OpenMP achieving 18.35x speedup.
+            </p>
+            <a
+              href="https://github.com/jbittu/k_means_clustering"
+              target="_blank"
+              class="text-indigo-400 hover:underline"
+              >View Code</a
+            >
+          </div>
+
+          <div
+            class="bg-gray-800 rounded-xl shadow-md overflow-hidden transform hover:scale-105 transition duration-300 p-6"
+          >
+            <img
+              src="assets/image/gym_6750831.png"
+              alt="Workout Buddy App"
+              class="mx-auto mb-4 w-16 h-16"
+            />
+            <h3 class="text-xl font-bold mb-2">Workout Buddy App</h3>
+            <p class="text-gray-400 mb-4">
+              Full-stack web app for tracking workouts built with React,
+              Express.js, MongoDB.
+            </p>
+            <a
+              href="github.com/jbittu/crud_appWith_db"
+              target="_blank"
+              class="text-indigo-400 hover:underline"
+              >View Code</a
+            >
+          </div>
+          <!-- GLXY Travel React Website -->
+          <div
+            class="bg-gray-800 rounded-xl shadow-md overflow-hidden transform hover:scale-105 transition duration-300 p-6"
+          >
+            <img
+              src="assets/image/glxy.png"
+              alt="GLXY Travel Website"
+              class="mx-auto mb-4 w-16 h-16"
+            />
+            <h3 class="text-xl font-bold mb-2">GLXY Travel – React Website</h3>
+            <p class="text-gray-400 mb-4">
+              Designed and developed a responsive travel website using React and
+              Vite, with modern routing and interactive UI via react-router-dom,
+              react-icons, and react-slick. Deployed using Netlify.
+            </p>
+            <a
+              href="https://glxytravel.netlify.app"
+              target="_blank"
+              class="text-indigo-400 hover:underline"
+              >Live Site</a
+            >
+          </div>
+          <!-- Multi-threaded Client-Server System -->
+          <div
+            class="bg-gray-800 rounded-xl shadow-md overflow-hidden transform hover:scale-105 transition duration-300 p-6"
+          >
+            <img
+              src="assets/image/request.png"
+              alt="Client-Server System"
+              class="mx-auto mb-4 w-16 h-16"
+            />
+            <h3 class="text-xl font-bold mb-2">
+              Multi-threaded Client-Server System
+            </h3>
+            <p class="text-gray-400 mb-4">
+              Java-based scalable client-server system using TCP sockets with
+              fixed and cached thread pools, capable of handling 100+ concurrent
+              client connections.
+            </p>
+            <a
+              href="https://github.com/jbittu/MultiThreadingWebServer"
+              target="_blank"
+              class="text-indigo-400 hover:underline"
+              >View Code</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="py-20 px-6 bg-gray-800" data-aos="fade-up">
+      <div class="max-w-screen-md mx-auto text-center">
+        <h2 class="text-3xl font-bold mb-8 text-indigo-400">Contact Me</h2>
+        <form action="https://formsubmit.co/jaiswalbittu0319@gmail.com" method="POST" class="space-y-6">
+          <input type="hidden" name="_captcha" value="false" />
+          <input
+            type="text"
+            name="name"
+            placeholder="Your Name"
+            required
+            class="w-full p-4 rounded-lg bg-gray-700 text-gray-200 focus:ring-2 focus:ring-indigo-500"
+          />
+          <input
+            type="email"
+            name="email"
+            placeholder="Your Email"
+            required
+            class="w-full p-4 rounded-lg bg-gray-700 text-gray-200 focus:ring-2 focus:ring-indigo-500"
+          />
+          <textarea
+            name="message"
+            placeholder="Your Message"
+            required
+            class="w-full p-4 rounded-lg bg-gray-700 text-gray-200 focus:ring-2 focus:ring-indigo-500"
+          ></textarea>
+          <button
+            type="submit"
+            class="w-full py-4 bg-indigo-600 hover:bg-indigo-700 text-white font-semibold rounded-lg transition"
+          >
+            Send Message
+          </button>
+        </form>
+        
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-gray-400 text-center py-6">
+      <div class="flex justify-center space-x-6">
+        <a
+          href="https://github.com/jbittu"
+          target="_blank"
+          class="hover:text-white"
+          >GitHub</a
+        >
+        <a
+          href="https://www.linkedin.com/in/bittu-jaiswal/"
+          target="_blank"
+          class="hover:text-white"
+          >LinkedIn</a
+        >
+      </div>
+      <p class="mt-4">&copy; 2025 Bittu Jaiswal. All Rights Reserved.</p>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  </body>
 </html>
